@@ -1,0 +1,39 @@
+body {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3e5f5; /* pastel lavender */
+  font-family: sans-serif;
+  
+}
+.business-card{
+  width: 480px;
+height: 200px;
+  background-color: white;
+  border:1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;/*prevent image overflow*/;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display:flex;
+  align-items:center;
+  padding: 20px;
+  gap: 20px; /*space between image and text*/
+}
+.profile-pic{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit:cover;
+  border: 2px solid #ddd;
+  
+}
+.card-content{
+  display: flex;
+  padding: 20px;/*add padding to the content*/
+  flex-direction: column;
+}
+.card-content h1{
+  margin-top: 10;/*remove default margin*/
+  font-size: 1.5em;
+}
